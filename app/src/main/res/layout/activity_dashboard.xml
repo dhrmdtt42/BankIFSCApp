@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gstedge.dharam.gstedge.DashboardActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/text_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="welcome..!!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="30dp">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/ifsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type your ifsc in capital"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                android:layout_marginTop="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp">
+
+    <Button
+        android:id="@+id/btn_ifsc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Get IFSC details"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/button_bg"
+        android:textColor="#102d49"
+        />
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/button_bg"
+        android:textColor="#102d49"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
